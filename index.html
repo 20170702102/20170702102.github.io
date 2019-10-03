@@ -278,6 +278,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/10/03/博客优化（一）/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/10/03/博客优化（一）/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -404,6 +414,16 @@ Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/10/03/python爬取百度图片（动态页面）/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/10/03/python爬取百度图片（动态页面）/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -532,6 +552,16 @@ Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/10/03/hello/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/10/03/hello/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -872,6 +902,28 @@ Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'OBqmQn4uNmFj10zT1N2lWuhV-gzGzoHsz',
+        appKey: 'I3aivC1GDjY7hEX1KTNh8LAm',
+        placeholder: 'biubiu',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
