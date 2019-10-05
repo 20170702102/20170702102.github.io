@@ -80,17 +80,17 @@
 
 
 
-<meta name="description" content="text fff  ttt  wwww e dd dd">
+<meta name="description" content="安装 hexo-admincd hexo 目录 1npm install --save hexo-admin  启动 hexo 1hexo s  然后打开 http://localhost:4000/admin/ 就可以看到管理页面。 问题Config value “admin.deployCommand” not found linux下的解决方法打开主配置文件_config.yml，在最下面加">
 <meta property="og:type" content="article">
-<meta property="og:title" content="admin">
+<meta property="og:title" content="安装 hexo-admin">
 <meta property="og:url" content="http://yoursite.com/2019/10/05/admin/index.html">
 <meta property="og:site_name" content="min">
-<meta property="og:description" content="text fff  ttt  wwww e dd dd">
+<meta property="og:description" content="安装 hexo-admincd hexo 目录 1npm install --save hexo-admin  启动 hexo 1hexo s  然后打开 http://localhost:4000/admin/ 就可以看到管理页面。 问题Config value “admin.deployCommand” not found linux下的解决方法打开主配置文件_config.yml，在最下面加">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-05T09:59:08.197Z">
+<meta property="og:updated_time" content="2019-10-05T10:41:19.083Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="admin">
-<meta name="twitter:description" content="text fff  ttt  wwww e dd dd">
+<meta name="twitter:title" content="安装 hexo-admin">
+<meta name="twitter:description" content="安装 hexo-admincd hexo 目录 1npm install --save hexo-admin  启动 hexo 1hexo s  然后打开 http://localhost:4000/admin/ 就可以看到管理页面。 问题Config value “admin.deployCommand” not found linux下的解决方法打开主配置文件_config.yml，在最下面加">
 
 
 
@@ -126,7 +126,7 @@
 
 
 
-  <title>admin | min</title>
+  <title>安装 hexo-admin | min</title>
   
 
 
@@ -250,7 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">admin</h1>
+          <h1 class="post-title" itemprop="name headline">安装 hexo-admin</h1>
         
 
         <div class="post-meta">
@@ -315,8 +315,26 @@
       
 
       
-        <p>text fff  ttt  wwww e dd</p>
-<p>dd </p>
+        <h3 id="安装-hexo-admin"><a href="#安装-hexo-admin" class="headerlink" title="安装 hexo-admin"></a>安装 hexo-admin</h3><p>cd hexo 目录</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-admin</span><br></pre></td></tr></table></figure>
+
+<p>启动 hexo</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>然后打开 <a href="http://localhost:4000/admin/" target="_blank" rel="noopener">http://localhost:4000/admin/</a> 就可以看到管理页面。</p>
+<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p><strong>Config value “admin.deployCommand” not found</strong></p>
+<h5 id="linux下的解决方法"><a href="#linux下的解决方法" class="headerlink" title="linux下的解决方法"></a>linux下的解决方法</h5><p>打开主配置文件_config.yml，在最下面加入如下代码</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">admin:</span><br><span class="line">  deployCommand: <span class="string">'hexo-deploy.sh'</span></span><br></pre></td></tr></table></figure>
+
+<p>在同级目录新建hexo-pubish.sh文件，文件内容如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<h5 id="windows下的解决方法"><a href="#windows下的解决方法" class="headerlink" title="windows下的解决方法"></a>windows下的解决方法</h5><p>打开主配置文件_config.yml，在最下面加入如下代码</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">admin:</span><br><span class="line">  deployCommand: <span class="string">'hexo-deploy.bat'</span></span><br></pre></td></tr></table></figure>
+
+<p>在同级目录新建hexo-pubish.bat文件，文件内容如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -404,8 +422,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -447,6 +474,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-hexo-admin"><span class="nav-number">1.</span> <span class="nav-text">安装 hexo-admin</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题"><span class="nav-number">2.</span> <span class="nav-text">问题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#linux下的解决方法"><span class="nav-number">2.0.1.</span> <span class="nav-text">linux下的解决方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#windows下的解决方法"><span class="nav-number">2.0.2.</span> <span class="nav-text">windows下的解决方法</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
